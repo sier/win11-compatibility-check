@@ -70,6 +70,7 @@ Write-CheckResult "CPU Speed" ($cpuSpeed -ge 1.0) "$cpuSpeed GHz"
 
 # 8. CPU Model Compatibility
 $cpuName = $cpu.Name.Trim()
+# Source of Intel CPUs: https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-intel-processors
 $intelList = @(
     "x6200FE",
     "x6211E",
@@ -633,6 +634,7 @@ $intelList = @(
     "U300",
     "U300E"
 )
+# Source of AMD CPUs: https://learn.microsoft.com/en-us/windows-hardware/design/minimum/supported/windows-11-supported-amd-processors
 $amdList = @(
     "3015e",
     "3020e",
@@ -963,5 +965,6 @@ if ($isIntel) {
     }
 }
 Write-CheckResult "CPU Supported" $cpuSupported $cpuName
+
 
 Write-Host "`n--- Finished ---`n"
