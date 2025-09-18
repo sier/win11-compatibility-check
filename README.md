@@ -6,3 +6,6 @@ A simple Powershell script to check if your machine is compatible with the requi
 
 ## How to use
 Simply run the powershell script using ```.\win11-compatibility-check.ps1``` on the machine you want to verify.
+
+## Known issues
+- This *script* is **only** intended for ***x86_64*** (Intel & AMD) CPUs --- ***ARM*** (I.e. Qualcomm processors) are **not** supported by *this script* at this time but may still be eligble to run Windows 11.
